@@ -286,7 +286,7 @@ class PyTextGui(QMainWindow):
 
     def about(self: object) -> None:
         """Logic for showing an about dialog content goes here..."""
-        with open('.\\resources\\about.txt') as file:
+        with open('.\\resources\\about.doc') as file:
             about_text = file.read()
             QMessageBox.about(self, "About PyText", about_text)
 
